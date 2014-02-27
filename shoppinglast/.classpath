@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="src" path="lucene"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_5_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="I:/hibernate/log4j/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="I:/lucene/IKAnalyzer3.2.0Stable.jar"/>
+	<classpathentry kind="lib" path="I:/lucene/lucene-analyzers-3.0.1.jar"/>
+	<classpathentry kind="lib" path="I:/lucene/lucene-core-3.0.1.jar"/>
+	<classpathentry kind="lib" path="I:/lucene/lucene-highlighter-3.0.1.jar"/>
+	<classpathentry kind="lib" path="I:/lucene/lucene-memory-3.0.1.jar"/>
+	<classpathentry kind="lib" path="I:/jdbc/JFreeChart/jcommon-1.0.12.jar"/>
+	<classpathentry kind="lib" path="I:/jdbc/JFreeChart/jfreechart-1.0.9.jar"/>
+	<classpathentry kind="lib" path="I:/jdbc/mysql-connector-java-5.1.13/mysql-connector-java-5.1.13/mysql-connector-java-5.1.13-bin.jar"/>
+	<classpathentry kind="lib" path="I:/jdbc/smartupload.jar"/>
+	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
+</classpath>

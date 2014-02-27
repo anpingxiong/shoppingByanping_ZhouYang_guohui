@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ <filter>
+  <filter-name>CharFilter</filter-name>
+  <filter-class>com.shopping.filter.CharSetFilter</filter-class>
+ </filter>
+ <filter-mapping>
+  <filter-name>CharFilter</filter-name>
+  <url-pattern>*.do</url-pattern>
+ </filter-mapping>
+  <filter>
+ 	<filter-name>ManageFilter</filter-name>
+ 	<filter-class>com.shopping.filter.ManageFilter</filter-class>
+ 	</filter>
+ 	
+ 	<filter-mapping>
+ 	<filter-name>ManageFilter</filter-name>
+ 	<url-pattern>/manage/*</url-pattern>
+ 	</filter-mapping>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>LogInServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.LogInServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>CheckName</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.CheckNameServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>CheckNumServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.CheckNumServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>CheckValidate</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.CheckValidateServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>RegisterServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.RegisterServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>QuitLoginServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.QuitLoginServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowUserServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.ShowUserServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowUserDetailServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.ShowUserDetailServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ChangeUserStateServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.ChangeUserStateServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowPlcardServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.ShowPlcardServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowPlacardServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.ShowPlacardServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowOnePlacardServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.ShowOnePlacardServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>UpdateNoticeServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.UpdateNoticeServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>DeleteNoticeServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.DeleteNoticeServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>AddNoticeServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.AddNoticeServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ModifyUserServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.ModifyUserServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>SelectUserByOrderServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.SelectUserByOrderServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>CheckUserIsLoginServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.CheckUserIsLoginServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowPGoodsServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.ShowPGoodsServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowGoodsServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.ShowGoodsServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowGoodsDetailsServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.ShowGoodsDetailsServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ModifyGoodsServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.ModifyGoodsServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>DeleteGoodsServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.DeleteGoodsServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>AddGoodsServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.AddGoodsServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowModifiedGoodsServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.ShowModifiedGoodsServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>LoadAllSortServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.LoadAllSortServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowAllSortServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.ShowAllSortServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>UpdateGoodsnumServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.UpdateGoodsnumServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowBigSortsServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.ShowBigSortsServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>ShowModifiedBigSortServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.ShowModifiedBigSortServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowModifiedSmallSortServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.ShowModifiedSmallSortServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>ShowManageSortsServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.ShowManageSortsServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>UpdateSortServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.UpdateSortServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>AddSortsServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.AddSortsServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>DeleteSortServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.DeleteSortServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowBargainGoodsServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.ShowBargainGoodsServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowNewGoodsServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.ShowNewGoodsServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowGoodsSaleServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.ShowGoodsSaleServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowGdetails2Servlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.ShowGdetails2Servlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowGoodsPageServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.ShowGoodsPageServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>UpdateNumByNameServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.UpdateNumByNameServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>UpLoadServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.UpLoadServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>CheckGoodsNameServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.CheckGoodsNameServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>searchGoodsServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.SearchGoodsServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowSortTreeServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.ShowSortTreeServlet</servlet-class>
+ </servlet>
+
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>EmptyCartServlet</servlet-name>
+  <servlet-class>com.shopping.zhouyang.servlet.EmptyCartServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>CartAddServlet</servlet-name>
+  <servlet-class>com.shopping.zhouyang.servlet.CartAddServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>CartShowServlet</servlet-name>
+  <servlet-class>com.shopping.zhouyang.servlet.CartShowServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowGoodDetailServlet</servlet-name>
+  <servlet-class>com.shopping.zhouyang.servlet.ShowGoodDetailServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>UpdateCartNumberServlet</servlet-name>
+  <servlet-class>com.shopping.zhouyang.servlet.UpdateCartNumberServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>BackCartServlet</servlet-name>
+  <servlet-class>com.shopping.zhouyang.servlet.BackCartServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>OrderAddServlet</servlet-name>
+  <servlet-class>com.shopping.zhouyang.servlet.OrderAddServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowUserOrderServlet</servlet-name>
+  <servlet-class>com.shopping.zhouyang.servlet.ShowUserOrderServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>GetUserDetailServlet</servlet-name>
+  <servlet-class>com.shopping.zhouyang.servlet.GetUserDetailServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>RemoveOrderServlet</servlet-name>
+  <servlet-class>com.shopping.zhouyang.servlet.RemoveOrderServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowOrderDetailServlet</servlet-name>
+  <servlet-class>com.shopping.zhouyang.servlet.ShowOrderDetailServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowOrderManageServlet</servlet-name>
+  <servlet-class>com.shopping.zhouyang.servlet.ShowOrderManageServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>DeliverOrderServlet</servlet-name>
+  <servlet-class>com.shopping.zhouyang.servlet.DeliverOrderServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowManageOrderDetailServlet</servlet-name>
+  <servlet-class>com.shopping.zhouyang.servlet.ShowManageOrderDetailServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>FindOrderServlet</servlet-name>
+  <servlet-class>com.shopping.zhouyang.servlet.FindOrderServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>FindOrdersByStateServlet</servlet-name>
+  <servlet-class>com.shopping.zhouyang.servlet.FindOrdersByStateServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowPlacardDetailServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.ShowPlacardDetailServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>addFavoriteServlet</servlet-name>
+  <servlet-class>com.shopping.anping.servlet.AddFavoriteServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>GetGoodsByOrderServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.GetGoodsByOrderServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>SearchGoodsByOrderServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.SearchGoodsByOrderServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowAllFavoriteServlet</servlet-name>
+  <servlet-class>com.shopping.guoguo.servlet.ShowAllFavoriteServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+  <servlet-name>LogInServlet</servlet-name>
+  <url-pattern>/login.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>CheckName</servlet-name>
+  <url-pattern>/CheckName.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>CheckNumServlet</servlet-name>
+  <url-pattern>/CheckNum.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>CheckValidate</servlet-name>
+  <url-pattern>/CheckValidate.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>RegisterServlet</servlet-name>
+  <url-pattern>/register.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>QuitLoginServlet</servlet-name>
+  <url-pattern>/quitLogin.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowUserServlet</servlet-name>
+  <url-pattern>/showUser.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowUserDetailServlet</servlet-name>
+  <url-pattern>/showUserDetail.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ChangeUserStateServlet</servlet-name>
+  <url-pattern>/changeUserState.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowPlcardServlet</servlet-name>
+  <url-pattern>/showPlcard.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowPlacardServlet</servlet-name>
+  <url-pattern>/showPlacard.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowOnePlacardServlet</servlet-name>
+  <url-pattern>/showOnePlacard.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>UpdateNoticeServlet</servlet-name>
+  <url-pattern>/updateNotice.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>DeleteNoticeServlet</servlet-name>
+  <url-pattern>/deleteNotice.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>AddNoticeServlet</servlet-name>
+  <url-pattern>/addNotice.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ModifyUserServlet</servlet-name>
+  <url-pattern>/modifyUser.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>SelectUserByOrderServlet</servlet-name>
+  <url-pattern>/selectUserByOrder.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>CheckUserIsLoginServlet</servlet-name>
+  <url-pattern>/checkUserIsLogin.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowPGoodsServlet</servlet-name>
+  <url-pattern>/showPGoods.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>DeleteSortServlet</servlet-name>
+  <url-pattern>/deleteSort.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowModifiedBigSortServlet</servlet-name>
+  <url-pattern>/showModifiedBigSort.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowManageSortsServlet</servlet-name>
+  <url-pattern>/showManageSorts.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowGoodsServlet</servlet-name>
+  <url-pattern>/showGoods.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowGoodsDetailsServlet</servlet-name>
+  <url-pattern>/showGoodsDetails.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ModifyGoodsServlet</servlet-name>
+  <url-pattern>/modifyGoods.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>DeleteGoodsServlet</servlet-name>
+  <url-pattern>/deleteGoods.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>AddGoodsServlet</servlet-name>
+  <url-pattern>/addGoods.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowModifiedGoodsServlet</servlet-name>
+  <url-pattern>/showModifiedGoods.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>LoadAllSortServlet</servlet-name>
+  <url-pattern>/loadAllSort.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowAllSortServlet</servlet-name>
+  <url-pattern>/showAllSort.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>UpdateGoodsnumServlet</servlet-name>
+  <url-pattern>/updateGoodsnum.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowBigSortsServlet</servlet-name>
+  <url-pattern>/showBigSorts.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowModifiedSmallSortServlet</servlet-name>
+  <url-pattern>/showModifiedSmallSort.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>UpdateSortServlet</servlet-name>
+  <url-pattern>/updateSort.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>AddSortsServlet</servlet-name>
+  <url-pattern>/addSorts.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowBargainGoodsServlet</servlet-name>
+  <url-pattern>/showBargainGoods.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowNewGoodsServlet</servlet-name>
+  <url-pattern>/showNewGoods.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowGoodsSaleServlet</servlet-name>
+  <url-pattern>/showGoodsSale.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowGdetails2Servlet</servlet-name>
+  <url-pattern>/showGdetail.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowGoodsPageServlet</servlet-name>
+  <url-pattern>/showGoodsPage.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>UpdateNumByNameServlet</servlet-name>
+  <url-pattern>/updateNumByName.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>UpLoadServlet</servlet-name>
+  <url-pattern>/upLoad.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>CheckGoodsNameServlet</servlet-name>
+  <url-pattern>/checkGoodsName.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>searchGoodsServlet</servlet-name>
+  <url-pattern>/searchGoods.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowSortTreeServlet</servlet-name>
+  <url-pattern>/showSortTree.do</url-pattern>
+ </servlet-mapping>
+  <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>GetGoodsServlet</servlet-name>
+  <servlet-class>com.shopping.zhouyang.servlet.GetGoodsServlet</servlet-class>
+ </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteFavoriteServlet</servlet-name>
+    <servlet-class>com.shopping.anping.servlet.DeleteFavoriteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ScanNoticeServlet</servlet-name>
+    <servlet-class>com.shopping.anping.servlet.ScanNoticeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <servlet-class>com.shopping.anping.servlet.AdminLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminLogOutServlet</servlet-name>
+    <servlet-class>com.shopping.anping.servlet.AdminLogOutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowAllAdsServlet</servlet-name>
+    <servlet-class>com.shopping.guoguo.servlet.ShowAllAdsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddAdServlet</servlet-name>
+    <servlet-class>com.shopping.guoguo.servlet.AddAdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteAdServlet</servlet-name>
+    <servlet-class>com.shopping.guoguo.servlet.DeleteAdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetAdsFromAdminServlet</servlet-name>
+    <servlet-class>com.shopping.guoguo.servlet.GetAdsFromAdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowAllGoodsByJsServlet</servlet-name>
+    <servlet-class>com.shopping.guoguo.servlet.ShowAllGoodsByJsServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+ <servlet-mapping>
+  <servlet-name>GetGoodsServlet</servlet-name>
+  <url-pattern>/getGoods.do</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>CartAddServlet</servlet-name>
+  <url-pattern>/cartAdd.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>CartShowServlet</servlet-name>
+  <url-pattern>/cartShow.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowGoodDetailServlet</servlet-name>
+  <url-pattern>/showGoodDetail.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>UpdateCartNumberServlet</servlet-name>
+  <url-pattern>/updateCartNumber.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>EmptyCartServlet</servlet-name>
+  <url-pattern>/emptyCart.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>BackCartServlet</servlet-name>
+  <url-pattern>/backCart.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>OrderAddServlet</servlet-name>
+  <url-pattern>/orderAdd.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowUserOrderServlet</servlet-name>
+  <url-pattern>/showUserOrder.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>GetUserDetailServlet</servlet-name>
+  <url-pattern>/getUserDetail.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>RemoveOrderServlet</servlet-name>
+  <url-pattern>/removeOrder.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowOrderDetailServlet</servlet-name>
+  <url-pattern>/showOrderDetail.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowOrderManageServlet</servlet-name>
+  <url-pattern>/showOrderManage.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>DeliverOrderServlet</servlet-name>
+  <url-pattern>/deliverOrder.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowManageOrderDetailServlet</servlet-name>
+  <url-pattern>/showManageOrderDetail.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>FindOrderServlet</servlet-name>
+  <url-pattern>/findOrder.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>FindOrdersByStateServlet</servlet-name>
+  <url-pattern>/findOrdersByState.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowPlacardDetailServlet</servlet-name>
+  <url-pattern>/showPlacardDetail.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>addFavoriteServlet</servlet-name>
+  <url-pattern>/addFavorite.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>GetGoodsByOrderServlet</servlet-name>
+  <url-pattern>/getGoodsByOrder.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>SearchGoodsByOrderServlet</servlet-name>
+  <url-pattern>/searchGoodsByOrder.do</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>ShowAllFavoriteServlet</servlet-name>
+  <url-pattern>/showAllFavorite.do</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteFavoriteServlet</servlet-name>
+    <url-pattern>/deleteFavorite.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ScanNoticeServlet</servlet-name>
+    <url-pattern>/scanNotice.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <url-pattern>/adminLogin.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminLogOutServlet</servlet-name>
+    <url-pattern>/adminLogOut.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowAllAdsServlet</servlet-name>
+    <url-pattern>/showAllAds.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddAdServlet</servlet-name>
+    <url-pattern>/addAd.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteAdServlet</servlet-name>
+    <url-pattern>/deleteAd.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetAdsFromAdminServlet</servlet-name>
+    <url-pattern>/getAdsFromAdmin.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowAllGoodsByJsServlet</servlet-name>
+    <url-pattern>/showAllGoodsByJs.do</url-pattern>
+  </servlet-mapping>
+ <welcome-file-list>
+  <welcome-file>index.jsp</welcome-file>
+ </welcome-file-list>
+ <login-config>
+  <auth-method>BASIC</auth-method>
+ </login-config>
+</web-app>
